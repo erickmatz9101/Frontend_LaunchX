@@ -1,0 +1,16 @@
+Despacho de abogados:
+
+-Necesidad por automatizar las demandas de los clientes por medio de página web que contenga un formulario
+-Creacion de usuario en la plataforma para los clientes y abogados:
+-Los clientes pueden ver sus avaces del caso.
+-Los abogados pueden subir información del avance del caso
+-Llenado el formulario se manda al usuario a una interfaz de pago para hacer la transaccion
+-Llega notificacion de pago al administrador y el alta del cliente con sus datos para poder levantar el documento con la información ingresada.
+-Notificar al usuario por medio de correos electrónicos para saber el avacnce de su caso
+
+
+Consideraciones:
+
+-Debe ser un diseño resposive para ser utilizado en celulares
+
+-Preferencia por los colores azul marino y blanco pero acepta propuestas
