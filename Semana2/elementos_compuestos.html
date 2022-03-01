@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Compuestos </title>
+</head>
+<body>
+    <h1>Explicación de Elementos Compuestos en HTML</h1>
+
+    <!-- Labels o etiquetas -->
+    <label for="Input1">Ejemplo de un input texto</label><br>
+
+    <!-- Entradas de datos o Inputs -->
+    <input type="text" id="Input1" name="Input1">
+    
+    <hr>
+
+    <!-- Tipos de Inputs de tipo texto -->
+    <h2>Inputs de tipo texto</h2>
+
+    <!-- Valida que ingrese que el tipo de input que se ingrese sea de tipo correo -->
+    <label for="correo1">Input de Correo</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+
+    <!-- Valida que ingrese que el tipo de input que se ingrese sea de tipo numero -->
+    <label for="numero1">Input de número</label><br>
+    <input type="number" id="numero1" name="numero1"><br><br>
+
+    <!-- Valida que ingrese que el tipo de input que se ingrese sea de tipo password cubre el contenido -->
+    <label for="psw1">Input de Password</label><br>
+    <input type="password" id="psw1" name="psw1"><br><br>
+    
+    <!-- Valida que ingrese que el tipo de input que se ingrese sea de tipo telefono -->
+    <label for="tel1">Input de Teléfono</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+    <!-- Valida que ingrese que el tipo de input que se ingrese sea de tipo url o direccion -->
+    <label for="url1">Input de URL</label><br>
+    <input type="url" id="url1" name="url1"><br><br>
+
+    <hr>
+
+    
+</body>
+</html>
+
+
+
+<!-- Los inputs nos sirven para que el usuario pueda ingresar lo que se le solicita y tenga interaccion con la misma, pueden contener 2 atributos:
+    Por lo general los inputs van a contar con 2 tipos de atributos ID y NAme los cuales van a servir como identificadores para mi input
+    ya que puede haber mas de uno y esa es la manera como voy a identificar cual es.
+
+Labels o etiquetas: Son etiquetas que nos sirven para poder referenciar a que input es al que hago referencia y agregar cierta informacion,
+dentro del atributo for="", debo pasar como poarámetro el id del input que deseo refrenciar.
+
+Input de tipo Numero: en el atributo maxlength lo que hace es validar que yo le de el numero maximo de cartacteres que se pueden ingresar
+en este caso seran 10 porque en México los número de teléfono son de ese máximo de caracteres.
+-->
