@@ -33,7 +33,7 @@
             font-family:cursive;
             font-size: 80px;
             text-align: center;
-            color: blueviolet;
+            color: rgb(207, 134, 124);
         }
 
         .logo{
@@ -43,16 +43,42 @@
         }
 
         .pagina_principal{
-            background: url(./frontImg/pasteles.webp);
+            background: url(./frontImg/panaderia-dibujo-animado-626x500.jpg);
             background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 70%;
+        
         }
 
         .frase{
             font-family:cursive;
             font-size: 40px;
             text-align: left;
-            color: rgb(70, 7, 245);
+            color: rgb(7, 217, 245);
         }
+
+        .menu{
+            text-align: center;
+        }
+
+        .titulo_pastel{
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .pasteles{
+            font-family: cursive;
+            font-size: x-large;
+            color: blueviolet;
+        }
+
+        .pedido{
+            padding: 20px 20px;
+            font-size: larger;
+            border-radius: 10px;
+        }
+
+
 
         /* Creando estilo para el pie de página */
 
@@ -81,10 +107,41 @@
     <section>
 
         <article>
-            <h1 class="titulo">Pastelería Dolce Gusto</h1>
-            <p class="frase">Pasteles para todos los gustos que deleitan tú paladar</p>
+            <h1 class="titulo">Pastelería Dolce Gusto</h1><br>
+            <p class="frase">Pasteles para todos los gustos que deleitan tú paladar</p><br>
         </article>
     </section>
+
+    <!-- Mostrando los tipos de pasteles -->
+
+    <section class="menu">
+        <h2 class="titulo_pastel">Tenemos para ofrecerte:</h2><br>
+
+        <dl class="pasteles"><br>
+            <img src="./frontImg/3 leches.jpg" alt="Pastel de 3 leches" height="100px">
+            <dt>Pastel de 3 Leches </dt>
+            <dd>3 leches con relleno de fresa o durazno</dd><br>
+            <img src="./frontImg/oreo.jpg" alt="Pstel oreo" height="100px">
+            <dt>Pastel Galleta Oreo</dt>
+            <dd>Pastel con malteada de chocolate, crema pastelera y Galleta Oreo</dd><br>
+            <img src="./frontImg/baylis.jpg" alt="Patel Baylis" height="100px">
+            <dt>Pastel Baylis</dt>
+            <dd>Licor Baylis y relleno de nuez con granos de café, bañado de chocolate</dd><br>
+            <img src="./frontImg/xpplorer.png" alt="Pastel Xplorer" height="100px">
+            <dt>Pastel Xplorer</dt>
+            <dd>3 leches relleno de galletas Canelitas y crateres de bombon</dd>
+        </dl><br>
+
+        <a href="/pedido_pastel.html"> <br>
+
+            <input type="button" value="Hacer pedido" class="pedido">
+            </a> <br>
+
+
+
+    </section> <br>
+
+
 
     <footer>
         <h2>Visitanos también en: </h2>

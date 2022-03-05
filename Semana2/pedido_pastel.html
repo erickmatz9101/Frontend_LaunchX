@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido Pastel</title>
+
+    <style>
+        .pedido{
+            background: url(./frontImg/pedido2.webp);
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: 70%;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+<body class="pedido">
+    <h1>Aquí puedes hacer tú pedido</h1>
+
+    <form action="pedido.js">
+        <label for="Nombre">Ingresa tú nombre</label> <br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+
+        <br> <br>
+
+        <label for="fecha"> Ingresa la fecha en la que deseas hacer tú pedido</label><br>
+        <input type="date" name="fecha" id="fecha">
+
+        <!-- Preguntando la cantidad de tacos que se desean ordenar -->
+        <p>¿Cuál es el sabor de tú preferencia?</p>
+        <input type="checkbox" id="3 leches" name="3 leches" value="3 Leches">
+        <label for="3 leches">Pastel de 3 leches</label>
+        <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad"><br>
+
+        <input type="checkbox" id="Pastel Galleta Oreo" name="Pastel Galleta Oreo" value="Pastel Galleta Oreo">
+        <label for="venus">Pastel Galleta Oreo</label>
+        <input type="number" id="Pastel Galleta Oreo" name="Pastel Galleta Oreo" placeholder="Cantidad"><br>
+
+        <input type="checkbox" id="Malteada de Chocolate" name="Malteada de Chocolate" value="Malteada de Chocolate">
+        <label for="venus">Malteada de Chocolate</label>
+        <input type="number" id="Malteada de Chocolate" name="Malteada de Chocolate" placeholder="Cantidad"><br>
+
+        <input type="checkbox" id="Pastel Baylis" name="Pastel Baylis" value="Pastel Baylis">
+        <label for="venus">Pastel Baylis</label>
+        <input type="number" id="Pastel Baylis" name="Pastel Baylis" placeholder="Cantidad"><br>
+
+
+        <!-- Seleccionando si desea tomar alguna bebida -->
+
+        <p>¿Quieres agregar algun relleno adicional a tu pastel?</p>
+        
+        <select name="topping" id="topping">
+
+            <option value="Zarzamora">Zarzamora</option>
+            <option value="Nuez">Nuez</option>
+            <option value="Manzana">Manzana</option>
+            <option value="Frambuesa">Frambuesa</option>
+            <option value="Mango">Mango</option>
+            <option value="Guayaba"> Guayaba</option>
+            
+        </select><br>
+
+        <p>¿Quieres agregar algun licor o sabor adicional?</p>
+
+        <select name="licor" id="licor">
+
+            <option value="Licor de café">Licor de café</option>
+            <option value="Tequila">Tequila</option>
+            <option value="Malteada de fresa">Malteada de Fresa</option>
+            <option value="Envinado">Envinado</option>
+            <option value="3 licores">3 licores</option>
+            
+            
+            
+
+        </select>
+
+        <!-- Colocando los inputs para poder resetear o enviar el pedido con las ordenes -->
+
+        <p>Si deseas volver a pedir por favor da click</p><br>
+        <input type="reset"><br>
+        <p>Para enviar el pedido da click aquí</p>
+        <input type="submit">
+        
+        
+
+    </form>
+    
+</body>
+</html>
