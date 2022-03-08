@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacunacion MX</title>
+    <link rel="stylesheet" href="./vacunacion.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <header>
+        <nav class="navegador">
+            <ul>
+                <li class="list_nav_principal" ><a class="nav_item_principal" href=>Vacunacion</a></li>
+                <li class="list_nav" ><a class="nav_item" href=>Educacion</a></li>
+                <li class="list_nav" ><a class="nav_item" href=>Noticias</a></li>
+                <li class="list_nav" ><a class="nav_item" href=>Fechas de Vacunacion</a></li>
+                <a class="nav_item" href="www.vacunacion.org.mx">
+                        <button class="inicio_sesion">Iniciar sesion</button>
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+    </header><br>
+
+    <main class="container">
+        <div class="box1 box">
+            <h1>¿Por qué es importante vacunarte? Y recibir los refuerzos después?</h1><br>
+
+            <p>Recuerda que las vacunas nos ayudan a prevenir el contagio de Covid19 ó en caso de contraerlo que sea de menor riezgo para 
+                tí y tú familia
+            </p> <br>
+
+            <img src="./img/cubrebocas.jpg" alt="">
+        </div>
+
+        <div class="box2 box">   
+            <img src="./img/enfermera.jpg" alt="">
+        </div>
+        
+    </main>
+    <section class="container">
+        <div class="box3 box" >
+            <h1>Si necesitas más informacion o agendar una cita puedes dejarnos tus datos aquí: </h1> <br> 
+            <form action="pedido.js">
+                <label for="Nombre">Ingresa tú nombre   </label> <br>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+            <p>Selecciona tu ciudad</p>
+            <select class="form-control form-control-lg"><br>
+                <option>CDMX</option>
+                <option>Guadalajara</option>
+                <option>Monterrey</option>
+                <option>Oaxaca</option>
+                <option>Veracruz</option>
+                <option>Guerrero</option>
+                <option>Puebla</option>
+            </select><br>
+            <p>Selecciona la vacuna que deseas</p>
+            <select class="form-control"><br>
+                <option>Sputnik V</option>
+                <option>Aztra Zeneca</option>
+                <option>Pfizer</option>
+                <option>Moderna</option>
+                <option>Cancino</option>
+            </select><br>
+            <p>Selecciona la fecha de aplicacion</p>
+            <input type="date">
+            <p>Selecciona el horario de aplicación</p>
+            <input type="time"><br>    
+            
+        </div>
+    </section>
+    
+</body>
+</html>
