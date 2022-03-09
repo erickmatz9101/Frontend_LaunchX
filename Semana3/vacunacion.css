@@ -140,5 +140,10 @@ header{
     border-radius:15px;
 }
 
+.img_vac{
+    border-radius:10px;
+    opacity: 40%;
+}
+
 
 
