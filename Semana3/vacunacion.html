@@ -32,44 +32,84 @@
                 tí y tú familia
             </p> <br>
 
-            <img src="./img/cubrebocas.jpg" alt="">
+            <img src="./img/cubrebocas.jpg" alt="" class="img1">
         </div>
 
         <div class="box2 box">   
-            <img src="./img/enfermera.jpg" alt="">
+            <img src="./img/enfermera.jpg" alt="" class="img2">
         </div>
         
     </main>
+
+                     <!-- Seccion creada para el envío de datos y cita de vacunación -->
     <section class="container">
-        <div class="box3 box" >
-            <h1>Si necesitas más informacion o agendar una cita puedes dejarnos tus datos aquí: </h1> <br> 
-            <form action="pedido.js">
-                <label for="Nombre">Ingresa tú nombre   </label> <br>
-                <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
-            <p>Selecciona tu ciudad</p>
-            <select class="form-control form-control-lg"><br>
-                <option>CDMX</option>
-                <option>Guadalajara</option>
-                <option>Monterrey</option>
-                <option>Oaxaca</option>
-                <option>Veracruz</option>
-                <option>Guerrero</option>
-                <option>Puebla</option>
-            </select><br>
-            <p>Selecciona la vacuna que deseas</p>
-            <select class="form-control"><br>
-                <option>Sputnik V</option>
-                <option>Aztra Zeneca</option>
-                <option>Pfizer</option>
-                <option>Moderna</option>
-                <option>Cancino</option>
-            </select><br>
-            <p>Selecciona la fecha de aplicacion</p>
-            <input type="date">
-            <p>Selecciona el horario de aplicación</p>
-            <input type="time"><br>    
+        <div class="box3">
+        <h1 class="titulo_form">Registra tú información para obtener una cita de Vacunación</h1><br>
+
+        <ul>
+            <li class="list_form">
+                <form action="pedido.js">
+                    <label for="Nombre">Ingresa tú nombre Completo</label> <br>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
             
-        </div>
+            </li>
+        </ul><br>
+
+        <ul>
+            <li class="list_form">
+                <form action="pedido.js">
+                    <label for="Nombre">Ingresa tú CURP</label> <br>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="CURP">
+            
+            </li>
+        </ul><br>
+
+        
+
+        <p class="p_form">Selecciona tú vacuna</p>
+        <ul>
+            <li class="list_form">
+                <select name="Vacuna" id="Vacuna">
+                    <option value="Sputnik V">Sputnik V</option>
+                    <option value="Aztra Zeneca">Aztra Zeneca</option>
+                    <option value="Pfizer">Pfizer</option>
+                    <option value="Cancino">Cancino</option>
+                    <option value="Jonhson & Jonhson">Jonhson & Jonhson</option>    
+                </select>
+
+            </li>
+        </ul><br>
+        <p class="p_form">Selecciona tu ciudad</p>
+        <ul>
+            <li class="list_form">
+                <select name="Ciudad" id="Ciudad">
+                    <option value="CDMX">CDMX</option>
+                    <option value="Puebla">Puebla</option>
+                    <option value="Guadalajara">Guadalajara</option>
+                    <option value="Monterrey">Monterrey</option>
+                    <option value="Oaxaca">Oaxaca</option>
+                    <option value="Guerrero">Guerrero</option>     
+                </select>
+
+            </li>
+        </ul><br>
+
+        <p class="p_form">Ingresa el día de tu cita para vacunarte</p>
+        <ul>
+            <li class="list_form">
+                <input type="date">
+            </li>
+        </ul><br>
+
+        <ul>
+            <li class="list_form">
+                <button class="enviar_info">Enviar</button>
+                
+            </li>
+        </ul>
+
+    </div>
+    <img src="./img/imagen_ formulario.jpg" alt="" height="500px" width="600px" class="img_form">
     </section>
     
 </body>
