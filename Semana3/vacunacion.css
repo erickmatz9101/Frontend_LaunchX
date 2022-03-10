@@ -87,6 +87,18 @@ header{
 
 }
 
+.container2{
+    display: flex;
+    justify-content: space-around;
+    background-color:azure;
+
+}
+
+.boxing{
+    width:350px;
+    height:320px;
+}
+
 .box1{
     text-align: start;
     font-size: 20px;
@@ -145,5 +157,25 @@ header{
     opacity: 40%;
 }
 
+.img_beneficios{
+    border-radius: 20px;
+}
+
+
+.h2_info{
+    text-align: center;
+    color: #3550E0;
+    font-size:30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+
+.p_info{
+    text-align: start;
+    font-size: 20px;
+    text-align: center;
+    color: #0e2fc2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: unset;
+}
 
 
