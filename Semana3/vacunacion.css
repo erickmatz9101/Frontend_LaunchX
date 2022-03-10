@@ -78,12 +78,12 @@ header{
 .container{
     display:flex;
     justify-content: space-evenly;
-    background-color: azure;
+    background-color:azure;
 }
 
 .box{
     width: 350px;
-    height:580px;
+    height:590px;
 
 }
 
@@ -96,7 +96,19 @@ header{
 
 .boxing{
     width:350px;
-    height:320px;
+    height:410px;
+}
+
+.container3{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:azure;
+}
+
+.boxing2{
+
+    width: 350px;
+    height:720px;
 }
 
 .box1{
