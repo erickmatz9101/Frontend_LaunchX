@@ -130,6 +130,83 @@ console.log(explorer.proPer);
 
 
 
+console.log("*****Flujos condicionales*****");
+
+let number1 = 4;
+let number2 = 2;
+
+console.log("***** If / else *****")
+
+if (number1 > number2){
+    console.log("El número 1 es mayor que el número 2");
+
+}
+
+else if(number1 == number2){
+    console.log("Los números son iguales");
+
+}
+
+else{
+    console.log("El número 2 es mayor que el número 1");
+
+}
+
+console.log("*****Ciclos condicionales******");
+
+console.log("***Ciclo While***");
+
+/**Mientras mi number while sea menor a 12 le va a ir sumando de 2 en 2 hasta que sea 12 */
+
+let numberWhile = 0;
+
+while (numberWhile <= 12) {
+
+    console.log(numberWhile);
+    numberWhile =numberWhile + 2;
+    
+}
+
+
+/**Va a pazar por lo menos una vez por el ciclo, es decir por lo menos lo va a iterar una vez
+ * La condicion se checa hasta el final del ciclo
+ * 
+ * Mientras el numero sea menor a 20 realiza lo que está dentro del do
+ * y en el while valida que se cumpla la condicion de que cuando el numero
+ * sea 20 entonces salga del ciclo y deje de hacer su función.
+ */
+
+console.log("*****Ciclo Do While*****");
+
+let numeroDoWhile = 20;
+
+do {
+    numberWhile = numberWhile +2;
+
+    console.log(numberWhile);
+
+} while (numeroDoWhile < 20);
+console.log("Awuí sale del Do While" + numeroDoWhile);
+
+
+//Ciclo for con iteracion controlada
+
+/**El ciclo for en este caso comienza en 0 y de ahi va a ir sumando de 1
+ * en 1 hasta que el numero sea 12
+ */
+
+console.log("*****Ciclo For*****");
+
+let numeroFor = 0;
+
+for ( numeroFor= 0; numeroFor <= 12; numeroFor +1) {
+
+    console.log(numeroFor);
+    
+}
+console.log("Aquí salimos del for");
+
+
 
 
 
