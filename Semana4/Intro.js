@@ -1,4 +1,7 @@
-//Para la escritura de variables ne JS recuerda poner la palabra reservada VAR
+
+/*Las variables se pueden declarar con la palabra reservada "var", estas variables se pueden considerar como globales
+También se pueden declarar con la palabra reservada "let" y estas serán usadas dentro de un bloque de código
+Igualmente está la declaración con la palabra reservada "const" y se usarán cuando el valor no cambie */
 
 console.log("*****Variables*****")
 //Tipo de dato entero
@@ -15,18 +18,12 @@ console.log("*****Variables*****")
 
 console.log("*****Cadenas*****");
 
-var frase1;
-
-frase1="Comillas dobles";
-
-var frase2;
-
-var frase2 = 'Comillas simples';
-
-console.log("*****Concatenación*****");
-
-console.log("Frase1: " +frase1  + " Frase2:" + frase2);
-
+/*Las cadenas (Strings) son caracteres que pueden ser una frase o palabra y estas pueden darse con comillas dobles "", simples '' o invertidas ``
+la diferencia es que con las invertidas podemos agregar variables dentro de la cadena con la sintaxis ${}*/
+console.log("\n************* Cadenas **************\n");
+var frase1 = "Ejemplo comillas dobles";
+var frase2 = 'Ejemplo comillas simples';
+var frase3 = `Ejemplo comillas ${frase1} invertidas`;
 
 //Concatenar sirve para ir metiendo los valores
 
@@ -205,6 +202,31 @@ for ( numeroFor= 0; numeroFor <= 12; numeroFor +1) {
     
 }
 console.log("Aquí salimos del for");
+
+
+/* Opciones para evitar anidar condicionales */
+
+
+/**Prompt lo que hace es arrojar un mensaje dentro del navegador */
+
+console.log("\n************* Switch **************\n");
+
+switch (prompt("¿Cómo está el clima?")) {
+case "lluvioso":
+    console.log("No te vayas a mojar");
+    break;
+case "soleado":
+    console.log("Ponte bloqueador");
+    break;
+case "nublado":
+    console.log("Tapate bien");
+    break;
+default:
+    console.log("No se como está el clima");
+    break;
+}
+console.log("Aquí salimos del Switch");
+
 
 
 
