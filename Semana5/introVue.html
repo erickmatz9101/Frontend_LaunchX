@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./introVue.css">
+    <title>Random user generator</title>
+</head>
+<body>
+
+    <!-- Este div es el que hace posible que se conecte el JS debido que tienen el mismo id (App) y todo lo que coloque dentro de el se pueda ver en el navegador -->
+    <div id="app"> 
+
+        <!-- Acomodando los atributos que coloque dentro de mi objeto en el JS -->
+
+        <img v-bind:src="picture" alt="foto perfil" :class="gender">
+        <h1>{{name}} {{firstName}}</h1>
+        <h3>Email: {{email}}</h3>
+        <button v-on:click="getUser()" :class="gender">Traer un usuario random</button>
+    </div>
+    
+
+
+    <!-- Colocando el script de VUE -->
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <!-- Colocando el script de Js -->
+    <script src="./introVue.js"></script>
+</body>
+</html>
