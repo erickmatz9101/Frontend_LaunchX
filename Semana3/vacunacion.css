@@ -229,7 +229,7 @@ header{
 .frase{
     font-size: 20px;
     text-align: left;
-    color: #c20e3b;
+    color:#1731c5;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: unset;
 
@@ -238,7 +238,7 @@ header{
 .ss{
     font-size: 20px;
     text-align: right;
-    color: #c20e0e;
+    color: #1731c5;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: unset;
 }
