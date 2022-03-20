@@ -3,14 +3,20 @@ const fetchPokemon =() =>{
 
     const pokeName = document.getElementById("pokeName"); //Hace refrencia al input del html para poder crear el document y busque al pokemon
 
-    let pokeInput =pokeName.value; //indicando que tome el valor del input que se ingrese
+    let pokeInput =pokeName.value.toLowerCase(); //indicando que tome el valor del input que se ingrese
 
     const url= `https://pokeapi.co/api/v2/pokemon/${pokeInput}`;
 
     fetch(url).then((res) =>{
 
-        return res.json();
+        if(res.status !="200"){
+            console.log(res);
+            //aqui va el gif del pigcachu en el console log
+        }
+        else{
+            return res.json();
 
+        }
     }).then((data) =>{ //Este .then es el que ya me da acceso a la informacion de data que yo deseo consultar y pueda verla en pantalla
 
         console.log(data);
@@ -19,25 +25,50 @@ const fetchPokemon =() =>{
         pokeImage(pokeImg); //mandando a llamar la funcion que cambia la imagen y le paso como parametro el lugar donde está
         console.log(pokeImg); 
 
-        let num = data.id; //Mostrar el numero de pokemon que es
-        console.log(num);
+        var num = data.id; //Mostrar el numero de pokemon que es  
+        var converter= `${num}`;//haciendo casteo de entero a String
+        console.log(typeof (converter));
+        pokeId(converter);
+
+        let esp = data.stats[0,2,0];
+        pokeEsp(esp);
 
     })
 
 }
 
-//fetchPokemon();
+
 
 
 /**Funcion que permita visualizar la imagen del pokemon que escriba */
 
 const pokeImage =(url) =>{
-    const pokeImg = document.getElementById("pokeImg"); //id que hace refrencia a la imagen que vamos a estar cambiando
-    pokeImg.src= url; //referenciando al atributo que deseo cambiar
+    const pokeImagen = document.getElementById("pokeImg"); //id que hace refrencia a la imagen que vamos a estar cambiando
+
+    pokeImagen.src= url; //referenciando al atributo que deseo cambiar
 }
 
 
+const pokeId = (numeroPokemon) =>{
 
+    const parrafo= document.getElementById("numPokemon");
+
+    parrafo.innerHTML=numeroPokemon;
+
+    console.log(numeroPokemon);
+    
+}
+
+
+const pokeEsp=(especies) =>{
+
+    const espImage=document.getElementById("estadistica");
+
+    espImage.innerHTML=especies;
+    
+
+
+}
 
 
 
