@@ -30,9 +30,13 @@ const fetchPokemon =() =>{
         console.log(typeof (converter));
         pokeId(converter);
 
-        let esp = data.stats[0,2,0];
-        pokeEsp(esp);
+        /**Altura del pokemon */
 
+        let altura= data.height;
+        pokeAltura(altura);
+        console.log(altura);
+
+        
     })
 
 }
@@ -48,7 +52,7 @@ const pokeImage =(url) =>{
     pokeImagen.src= url; //referenciando al atributo que deseo cambiar
 }
 
-
+/**Muestra el id de cada pokemon */
 const pokeId = (numeroPokemon) =>{
 
     const parrafo= document.getElementById("numPokemon");
@@ -59,15 +63,13 @@ const pokeId = (numeroPokemon) =>{
     
 }
 
+/**Muestra la altura de cada pokemon */
+const pokeAltura =(alturaPokemon) =>{
+    const parrafo= document.getElementById("altura");
 
-const pokeEsp=(especies) =>{
+    parrafo.innerHTML=alturaPokemon;
 
-    const espImage=document.getElementById("estadistica");
-
-    espImage.innerHTML=especies;
-    
-
-
+    console.log(alturaPokemon);
 }
 
 

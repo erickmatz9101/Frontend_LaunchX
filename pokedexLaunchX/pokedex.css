@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.cabecera{
+    background-image:url(./img/bosque2.jpg);
+    background-size: 50%;
+    padding: 20px;
+
+}
+
+body{
+    background-color:#2C7BBF;
+}
+
+
+.titulo_pokemon{
+    position: relative;
+    bottom: 75px;
+    left: 65px;
+
+}
+
+.charmander{
+
+    position: relative;
+    width: 200px;
+    height:200px;
+    left: 550px;
+    bottom: 10px;
+    right: 100px;
+
+}
+
+.pikachu{
+    position: relative;
+    width: 250px;
+    height: 200px;
+
+}
+
+.pokedex{
+    position: relative;
+    top: 100px;
+    left: 350px;
+
+}
+
+.pokeball{
+    position: relative;
+    bottom:260px;
+    left:480px;
+}
+
+.button_cambiar{
+    position: relative;
+    left:440px ;
+    bottom: 100px;
+    border-radius: 15px;
+}
+
+
+.pokename{
+    position: relative;
+    top:10px;  
+    right: 350px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.id_pokemon{
+    position: relative;
+    left:800px;
+    bottom: 420px;
+}
+
+.num_pokemon{
+    position: relative;
+    left: 900px;
+    bottom: 438px;
+}
+
+
+.alturaPokemon{
+    position: relative;
+    left: 800px;
+    bottom: 410px;
+}
+
+.altura_poke{
+
+    position: relative;
+    left: 900px;
+    bottom: 430px;
+
+}

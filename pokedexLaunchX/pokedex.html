@@ -8,17 +8,34 @@
     <link rel="stylesheet" href="./pokedex.css">
 </head>
 <body>
-    <h1>Pokedex Lauch X</h1>
 
-    <input type="text" placeholder="pokemon " id="pokeName" name="pokeName"><br>
+    <header class="cabecera">
 
-    <img src="./img/pokeball.png" alt="pokeball" id="pokeImg" width="200px"><br>
+        <img src="./img/titulo pokedex.png" alt="titulo" class="titulo_pokemon">
 
-    <button onclick="fetchPokemon()">Cambiar pokemon</button><br>
+        <img src="./img/charmander.png" alt="imagen_pokemones" class="charmander">
 
-    <p id="numPokemon"></p>
+        <img src="./img/pikachu.png" alt="pikachu" class="pikachu">
 
-    <p id="estadistica"></p>
+    </header>
+    
+    <img src="./img/Pokedex.jpg" alt="Pokedex" class="pokedex">
+
+    <input type="text" placeholder="pokemon " id="pokeName" name="pokeName" class="pokename"><br>
+
+    <img src="./img/pokeball.png" alt="pokeball" id="pokeImg" width="130px" class="pokeball"><br >
+
+    <button onclick="fetchPokemon()" class="button_cambiar">Cambiar pokemon</button><br>
+
+        <!-- Indicador del numero de pokemon -->
+    <p class="id_pokemon">Su número es: </p>
+    <p id="numPokemon" class="num_pokemon"></p>
+
+        <!-- Indicador de la altura del pokemon -->
+
+        <p class="alturaPokemon" > Su altura es: </p>
+        <p id="altura" class="altura_poke"></p>
+    
     
 
     <script src="./pokedex.js"></script>
